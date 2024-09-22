@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="15dp"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="20dp"
+    app:cardBackgroundColor="#A6FF8E"
+    tools:context=".AddProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Profile Name EditText with icon -->
+        <EditText
+            android:id="@+id/profileNameEt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Enter Profile Name"
+            android:drawableStart="@drawable/person"
+            android:drawablePadding="10dp"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Profile Email EditText with icon -->
+        <EditText
+            android:id="@+id/profileEmailEt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Enter Profile Email"
+            android:drawableStart="@drawable/email"
+            android:drawablePadding="10dp"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileNameEt" />
+
+        <!-- Profile DOB EditText with icon -->
+        <EditText
+            android:id="@+id/profileDOBEt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Enter Profile DOB"
+            android:drawableStart="@drawable/calender"
+            android:drawablePadding="10dp"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileEmailEt" />
+
+        <!-- Profile District EditText with icon -->
+        <EditText
+            android:id="@+id/profileDistrictEt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Enter Profile District"
+            android:drawableStart="@drawable/location"
+            android:drawablePadding="10dp"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileDOBEt" />
+
+        <!-- Profile Mobile EditText with icon -->
+        <EditText
+            android:id="@+id/profilemobileEt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Enter Profile Mobile"
+            android:drawableStart="@drawable/phone"
+            android:drawablePadding="10dp"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profileDistrictEt" />
+
+        <!-- Add Profile Button -->
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="ADD PROFILE"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#88C6F6"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profilemobileEt" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
