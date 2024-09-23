@@ -21,6 +21,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".AddProfileActivity"
+            android:exported="true" />
+
+        <activity android:name=".ProfileListActivity"
+            android:exported="true" />
+        <activity android:name=".UpdateProfileActivity"
+            android:exported="true" />
+
+
     </application>
 
 </manifest>
