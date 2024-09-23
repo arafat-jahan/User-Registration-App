@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -16,7 +15,26 @@
         android:layout_height="wrap_content"
         android:padding="16dp">
 
-        <!-- Profile Name EditText with icon -->
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="262dp"
+            android:layout_height="188dp"
+            android:src="@drawable/logouser"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/appNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ProfileHub"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/logoImageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
         <EditText
             android:id="@+id/profileNameEt"
             android:layout_width="0dp"
@@ -30,9 +48,8 @@
             android:background="@drawable/edittext_background"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/appNameTxt" />
 
-        <!-- Profile Email EditText with icon -->
         <EditText
             android:id="@+id/profileEmailEt"
             android:layout_width="0dp"
@@ -48,7 +65,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/profileNameEt" />
 
-        <!-- Profile DOB EditText with icon -->
         <EditText
             android:id="@+id/profileDOBEt"
             android:layout_width="0dp"
@@ -64,7 +80,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/profileEmailEt" />
 
-        <!-- Profile District EditText with icon -->
         <EditText
             android:id="@+id/profileDistrictEt"
             android:layout_width="0dp"
@@ -80,7 +95,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/profileDOBEt" />
 
-        <!-- Profile Mobile EditText with icon -->
         <EditText
             android:id="@+id/profilemobileEt"
             android:layout_width="0dp"
@@ -96,7 +110,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/profileDistrictEt" />
 
-        <!-- Add Profile Button -->
         <Button
             android:id="@+id/addBtn"
             android:layout_width="wrap_content"

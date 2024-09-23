@@ -14,58 +14,88 @@
         android:layout_height="match_parent"
         android:padding="10dp">
 
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/logouser"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5" />
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="ProfileHub"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appLogo" />
+
         <EditText
             android:id="@+id/profileNameEt"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="144dp"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="10dp"
             android:hint="Enter Profile Name"
+            app:layout_constraintTop_toBottomOf="@+id/appName"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="parent" />
+
 
         <EditText
             android:id="@+id/profileEmailEt"
             android:layout_width="0dp"
-            android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:hint="Enter Profile Email"
             app:layout_constraintEnd_toEndOf="@+id/profileNameEt"
             app:layout_constraintStart_toStartOf="@+id/profileNameEt"
             app:layout_constraintTop_toBottomOf="@+id/profileNameEt" />
+
+        <!-- Profile Date of Birth EditText -->
         <EditText
             android:id="@+id/profileDOBEt"
             android:layout_width="0dp"
-            android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:hint="Enter Profile Date of Birth"
             app:layout_constraintEnd_toEndOf="@+id/profileEmailEt"
             app:layout_constraintStart_toStartOf="@+id/profileEmailEt"
             app:layout_constraintTop_toBottomOf="@+id/profileEmailEt" />
 
+        <!-- Profile District EditText -->
         <EditText
             android:id="@+id/profileDistrictEt"
             android:layout_width="0dp"
-            android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:hint="Enter Profile District"
             app:layout_constraintEnd_toEndOf="@+id/profileDOBEt"
             app:layout_constraintStart_toStartOf="@+id/profileDOBEt"
             app:layout_constraintTop_toBottomOf="@+id/profileDOBEt" />
 
+        <!-- Profile Mobile EditText -->
         <EditText
             android:id="@+id/profilemobileEt"
             android:layout_width="0dp"
-            android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:hint="Enter Profile Mobile"
             app:layout_constraintEnd_toEndOf="@+id/profileDistrictEt"
             app:layout_constraintStart_toStartOf="@+id/profileDistrictEt"
             app:layout_constraintTop_toBottomOf="@+id/profileDistrictEt" />
 
+        <!-- Add Profile Button -->
         <Button
             android:id="@+id/addBtn"
             android:layout_width="wrap_content"
@@ -76,7 +106,6 @@
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="@+id/profilemobileEt"
             app:layout_constraintTop_toBottomOf="@+id/profilemobileEt" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -12,9 +12,14 @@ class ProfileDetailActivity : AppCompatActivity() {
     private lateinit var dobTextView: TextView
     private lateinit var districtTextView: TextView
     private lateinit var mobileTextView: TextView
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.profile_detail)
+
+        // Retrieve the user profile from the intent
         userProfile = intent.getSerializableExtra("USER_PROFILE") as UserProfile
 
         nameTextView = findViewById(R.id.nameTextView)
@@ -34,3 +39,4 @@ class ProfileDetailActivity : AppCompatActivity() {
         mobileTextView.text = userProfile.mobile
     }
 }
+

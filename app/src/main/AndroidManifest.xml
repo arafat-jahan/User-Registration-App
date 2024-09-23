@@ -13,6 +13,9 @@
         android:theme="@style/Theme.UserProfileRegistration"
         tools:targetApi="31">
         <activity
+            android:name=".LoadingActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -21,16 +24,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".AddProfileActivity"
+        <activity
+            android:name=".AddProfileActivity"
             android:exported="true" />
-
-        <activity android:name=".ProfileListActivity"
+        <activity
+            android:name=".ProfileListActivity"
             android:exported="true" />
-        <activity android:name=".UpdateProfileActivity"
+        <activity
+            android:name=".UpdateProfileActivity"
             android:exported="true" />
-
-
     </application>
 
 </manifest>
