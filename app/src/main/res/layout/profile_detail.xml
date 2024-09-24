@@ -8,12 +8,13 @@
     app:cardElevation="15dp"
     app:cardCornerRadius="15dp"
     android:layout_margin="30dp"
-    android:background="#7CC2F4"
+    android:background="#6FD185"
     tools:context=".ProfileDetailActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#71CA4E"
         android:orientation="vertical"
         android:padding="16dp">
 

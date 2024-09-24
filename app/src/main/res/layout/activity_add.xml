@@ -7,7 +7,7 @@
     app:cardElevation="15dp"
     app:cardCornerRadius="20dp"
     android:layout_margin="20dp"
-    app:cardBackgroundColor="#A6FF8E"
+    app:cardBackgroundColor="#140883"
     tools:context=".AddProfileActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -30,6 +30,7 @@
             android:layout_height="wrap_content"
             android:text="ProfileHub"
             android:textSize="24sp"
+            android:textColor="@color/white"
             android:textStyle="bold"
             app:layout_constraintTop_toBottomOf="@+id/logoImageView"
             app:layout_constraintStart_toStartOf="parent"
