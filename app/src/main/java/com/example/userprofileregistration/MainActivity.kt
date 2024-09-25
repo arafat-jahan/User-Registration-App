@@ -61,8 +61,7 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, LoadingActivity::class.java)
         intent.putExtra("TARGET_ACTIVITY", "com.example.userprofileregistration.ProfileListActivity")
         startActivity(intent)
-        // Optionally finish the MainActivity so it doesn't stay in the backstack
-        finish()
+        // Do not finish MainActivity here to keep it in the back stack
     }
 
     // Load a fragment into the FrameLayout (fragment_container)
@@ -70,6 +69,16 @@ class MainActivity : AppCompatActivity() {
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container, fragment)
             .commit()
+    }
+
+    override fun onBackPressed() {
+        // If the drawer is open, close it first
+        if (drawerLayout.isDrawerOpen(androidx.core.view.GravityCompat.START)) {
+            drawerLayout.closeDrawer(androidx.core.view.GravityCompat.START)
+        } else {
+            // Move the app to the background instead of closing it
+            moveTaskToBack(true)
+        }
     }
 
     // Handle the ActionBarDrawerToggle clicks
